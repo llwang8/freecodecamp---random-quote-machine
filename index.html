@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Random Quote Machine</title>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link ref="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="javascript/jQuery.js"></script>
+
+</head>
+
+<body class="bg-color text-center">
+
+  <div class="container-fluid">
+    <div class="col-sm-8 bg-grey">
+      <div class="row">
+        <h1 id="quote" class="font-special">"When you are courting a nice girl an hour seems like a second. When you sit on a red-hot cinder a second seems like an hour. That's relativity."</h1>
+        <p id="author" class="font-special pull-right">- by Albert Einstein</p>
+      </div>
+      <div class="row">
+        <a target="_blank" href="https://twitter.com/share">
+          <button type="button" class="btn bg-color font-light pull-left divider">Twitter</button </a>
+          <span class="">&nbsp;</span>
+          <a href="https://www.facebook.com/mypage" target="_blank" title="Facebook">
+            <button type="button" class="btn bg-color font-light pull-left">Facebook</button>
+          </a>
+          <button id="newquote" type="button" class="btn bg-color font-light pull-right">New Quote</button>
+          <p></p>
+      </div>
+    </div>
+
+    <div class="col-sm-8">
+      <div class="row">
+        <p class="font-light">Responsive Quotes Box Designed by llwang8</div>
+    </div>
+  </div>
+
+  </div>
+
+ <script>
+   !function(d,s,id){
+   var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
+
+</body>
+
+</html>

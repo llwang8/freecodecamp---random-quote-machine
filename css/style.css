@@ -1,0 +1,31 @@
+
+html,
+body {
+  background-color:#ffffff;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+  padding: 33px;
+}
+
+.bg-color {
+  background-color: #f4511e;
+}
+
+.font-special {
+  color: #f4511e;
+}
+
+.font-light {
+  color: #f6f6f6;
+}
+
+.container-fluid {
+   padding: 60px 50px;
+}
+
+.divider{
+   padding: 6px;
+   margin-right: 3px; 
+}
