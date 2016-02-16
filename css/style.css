@@ -18,14 +18,15 @@ body
   padding: 33px;
 }
 .row-pad {
-    padding: 33px;
+padding: 33px;
 }
 
 .bg-color {
   background-color: #f4511e;
 }
+
 .font-quote {
-color: #f4511e;
+  color: #f4511e;
   font-size: 24px;
 
 }
