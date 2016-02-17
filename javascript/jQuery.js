@@ -1,7 +1,7 @@
 //function change() {
 
   $(document).ready(function(){
-    $("#newquote").click(function(){
+
         var color = ["chocolate", "firebrick", "maroon", "crimson", "darkorange", "red", "orange",  "darkgoldenrod",  "goldenrod",  "limegreen", "forestgreen", "olive", "olivedrab", "teal", "peru", "royalblue", "slateblue", "blue", "fuchsia", "purple", "indigo", "navy"];
       var quotes = [
         {"quote": "You have to learn the rules of the game. And then you have to play better than anyone else.", "author": "Albert Einstein"},
@@ -44,6 +44,8 @@
         {"quote": "非礼勿视，非礼勿听，非礼勿言，非礼勿动. <br>See no evil, hear no evil, speak no evil, do no evil.", "author": "孔夫子 Confucius"},
         {"quote": "Men are April when they woo, December when they wed. Maids are May when they are maids, but the sky changes when they are wives.", "author": "William Shakespeare"}
       ];
+
+  $("#newquote").click(function(){
         var randcolor = color[Math.floor(Math.random() * color.length)];
         $(".font-special").css("color", randcolor);
         $(".font-quote").css("color", randcolor);
@@ -51,15 +53,24 @@
       //random quote
       var randkey = Math.floor(Math.random() * quotes.length);
       var result = quotes[randkey];
-      //$.getJSON("quotes.js", function(result){
-      //  $.each(result, function(quote, author){
       document.getElementById("quote").innerHTML = result.quote;
       document.getElementById("author").innerHTML = "- by " + result.author;
 
-      //  });
-    //});
+    });
+
+  $("#newquote2").click(function(){
+        var randcolor = color[Math.floor(Math.random() * color.length)];
+        $(".font-special").css("color", randcolor);
+        $(".font-quote").css("color", randcolor);
+        $(".bg-color").css("background", randcolor);
+      //random quote
+      var randkey = Math.floor(Math.random() * quotes.length);
+      var result = quotes[randkey];
+      document.getElementById("quote").innerHTML = result.quote;
+      document.getElementById("author").innerHTML = "- by " + result.author;
 
     });
-  });
+
+});
 
 //}
